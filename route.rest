@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5e5abd10e4521537a
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"kamesh",
+    "subscribedToChannel":"test"
+}
+
+### 
+DELETE  http://localhost:3000/subscribers/5e5abd0ee4521537aca2edd9
+
+
+###
+
+PATCH http://localhost:3000/subscribers/5e5abcfee4521537aca2edd8
+Content-Type: application/json
+
+{
+    "name":"Kamesh Waran",
+    "subscribedToChannel":"testing channel"
+}
